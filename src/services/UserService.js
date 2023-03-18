@@ -11,7 +11,7 @@ const UserService = {
         url =
           "http://sweeftdigital-intern.eu-central-1.elasticbeanstalk.com/user/1/20";
       }
-      const response = await fetch.get(url);
+      const response = await axios.get(url);
       return this.addRandomnessToImages(response.data.list);
     } catch (error) {
       throw error;
