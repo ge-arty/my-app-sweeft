@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/my-app-swift/static/css/main.a6902b8d.css",
-    "main.js": "/my-app-swift/static/js/main.615f190d.js",
+    "main.js": "/my-app-swift/static/js/main.0e0ba570.js",
     "index.html": "/my-app-swift/index.html",
     "main.a6902b8d.css.map": "/my-app-swift/static/css/main.a6902b8d.css.map",
-    "main.615f190d.js.map": "/my-app-swift/static/js/main.615f190d.js.map"
+    "main.0e0ba570.js.map": "/my-app-swift/static/js/main.0e0ba570.js.map"
   },
   "entrypoints": [
     "static/css/main.a6902b8d.css",
-    "static/js/main.615f190d.js"
+    "static/js/main.0e0ba570.js"
   ]
 }
