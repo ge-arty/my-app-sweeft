@@ -6,10 +6,10 @@ const UserService = {
     try {
       let url;
       if ((page !== null) & (page > 1)) {
-        url = `http://sweeftdigital-intern.eu-central-1.elasticbeanstalk.com/user/${page}/8`;
+        url = `https://sweeftdigital-intern.eu-central-1.elasticbeanstalk.com/user/${page}/8`;
       } else {
         url =
-          "http://sweeftdigital-intern.eu-central-1.elasticbeanstalk.com/user/1/20";
+          "https://sweeftdigital-intern.eu-central-1.elasticbeanstalk.com/user/1/20";
       }
       const response = await axios.get(url);
       return this.addRandomnessToImages(response.data.list);
@@ -20,7 +20,7 @@ const UserService = {
   // Getting Api for each User
   getUser: async function (id) {
     try {
-      let url = `http://sweeftdigital-intern.eu-central-1.elasticbeanstalk.com/user/${id}`;
+      let url = `https://sweeftdigital-intern.eu-central-1.elasticbeanstalk.com/user/${id}`;
       const response = await axios.get(url);
       return response.data;
     } catch (error) {
@@ -32,9 +32,9 @@ const UserService = {
     try {
       let url;
       if ((page !== null) & (page > 1)) {
-        url = `http://sweeftdigital-intern.eu-central-1.elasticbeanstalk.com/user/${id}/friends/${page}/8`;
+        url = `https://sweeftdigital-intern.eu-central-1.elasticbeanstalk.com/user/${id}/friends/${page}/8`;
       } else {
-        url = `http://sweeftdigital-intern.eu-central-1.elasticbeanstalk.com/user/${id}/friends/${page}/20`;
+        url = `https://sweeftdigital-intern.eu-central-1.elasticbeanstalk.com/user/${id}/friends/${page}/20`;
       }
       const response = await axios.get(url);
       return this.addRandomnessToImages(response.data.list);
